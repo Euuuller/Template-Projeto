@@ -1,0 +1,12 @@
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+.claude/
+
+# Assets (optional, but keep CV and profile)
+# assets/pdf/
+# assets/images/
