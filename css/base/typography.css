@@ -1,0 +1,50 @@
+/* ========================================
+   Typography
+   ======================================== */
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  font-weight: var(--font-regular);
+  color: var(--text-primary);
+  background-color: var(--bg-body);
+  transition: background-color var(--transition-base), color var(--transition-base);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--font-bold);
+  color: var(--text-primary);
+}
+
+h1 { font-size: var(--text-5xl); }
+h2 { font-size: var(--text-3xl); }
+h3 { font-size: var(--text-xl); }
+h4 { font-size: var(--text-lg); }
+
+p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--color-blue-500), var(--color-indigo-600));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-subtle {
+  background: linear-gradient(to right, var(--color-slate-800), var(--color-slate-600));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (min-width: 768px) {
+  h1 { font-size: var(--text-6xl); }
+  h2 { font-size: var(--text-4xl); }
+}

@@ -1,0 +1,28 @@
+/* ========================================
+   Dark Theme Overrides
+   ======================================== */
+
+html.dark {
+  --bg-body: #050505;
+  --bg-navbar: rgba(10, 10, 10, 0.8);
+  --bg-card: #0a0a0a;
+  --bg-card-rgb: 10, 10, 10;
+  --bg-input: #111111;
+  --text-primary: var(--color-slate-100);
+  --text-secondary: var(--color-slate-300);
+  --text-muted: var(--color-slate-400);
+  --text-accent: var(--color-blue-400);
+  --border-color: var(--color-slate-800);
+  --border-color-subtle: rgba(30, 41, 59, 0.6);
+}
+
+html.dark .text-gradient-subtle {
+  background: linear-gradient(to right, #ffffff, var(--color-slate-300));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+html.dark .bg-dotted {
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+}

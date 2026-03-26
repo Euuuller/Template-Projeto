@@ -1,0 +1,71 @@
+/* ========================================
+   Grid & Layout System
+   ======================================== */
+
+.container {
+  width: 100%;
+  max-width: var(--container-xl);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--space-6);
+  padding-right: var(--space-6);
+}
+
+.container-lg {
+  max-width: var(--container-2xl);
+}
+
+/* Section base */
+.section {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
+
+.section__inner {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Grid utilities */
+.grid {
+  display: grid;
+  gap: var(--space-6);
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Responsive grids */
+@media (max-width: 767px) {
+  .grid-cols-2,
+  .grid-cols-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .lg\:grid-about {
+    grid-template-columns: 1fr 1.5fr;
+    gap: 60px;
+  }
+}
