@@ -90,7 +90,7 @@ export const SKILLS = [
   { name: 'NumPy', phrase: 'Computação Científica', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg' },
   { name: 'Scikit-Learn', phrase: 'Machine Learning', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg' },
   { name: 'Figma', phrase: 'Prototipagem UI/UX', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg' },
-  { name: 'LaTeX', phrase: 'Redação Técnica', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/latex/latex-original.svg' },
+  { name: 'LaTeX', phrase: 'Redação Técnica', iconUrl: 'assets/icons/latex.svg' },
   { name: 'Git', phrase: 'Controle de Versão', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg' },
   { name: 'GitHub', phrase: 'Plataforma', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg' },
   { name: 'VS Code', phrase: 'IDE', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg' },
