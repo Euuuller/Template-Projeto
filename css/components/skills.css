@@ -1,0 +1,75 @@
+/* ========================================
+   Skills Component
+   ======================================== */
+
+.skills {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
+
+.skills__carousel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  overflow: hidden;
+}
+
+.skills__track {
+  display: flex;
+  width: max-content;
+}
+
+.skills__track--left {
+  animation: scrollLeft 35s linear infinite;
+}
+
+.skills__track--right {
+  animation: scrollRight 35s linear infinite;
+}
+
+.skills__carousel:hover .skills__track--left,
+.skills__carousel:hover .skills__track--right {
+  animation-play-state: paused;
+}
+
+/* Skill card */
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  width: 160px;
+  flex-shrink: 0;
+  padding: var(--space-4) var(--space-2);
+  cursor: default;
+}
+
+.skill-card__icon-wrapper {
+  transition: transform var(--transition-base);
+}
+
+.skill-card:hover .skill-card__icon-wrapper {
+  transform: translateY(-8px);
+}
+
+.skill-card__icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  object-fit: contain;
+}
+
+.skill-card__name {
+  font-size: var(--text-sm);
+  font-weight: var(--font-bold);
+  color: var(--text-primary);
+  text-align: center;
+}
+
+.skill-card__phrase {
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+  text-align: center;
+}
