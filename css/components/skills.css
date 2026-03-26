@@ -30,10 +30,6 @@
   animation: scrollRight 35s linear infinite;
 }
 
-.skills__carousel:hover .skills__track--left,
-.skills__carousel:hover .skills__track--right {
-  animation-play-state: paused;
-}
 
 /* Skill card */
 .skill-card {

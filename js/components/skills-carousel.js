@@ -14,9 +14,9 @@ export function initSkillsCarousel() {
   const skillsTrack1 = SKILLS.slice(0, mid);
   const skillsTrack2 = SKILLS.slice(mid);
 
-  // Duplicate for infinite scroll
-  const items1 = [...skillsTrack1, ...skillsTrack1];
-  const items2 = [...skillsTrack2, ...skillsTrack2];
+  // Duplicate for infinite scroll (4 times to cover large screens)
+  const items1 = [...skillsTrack1, ...skillsTrack1, ...skillsTrack1, ...skillsTrack1];
+  const items2 = [...skillsTrack2, ...skillsTrack2, ...skillsTrack2, ...skillsTrack2];
 
   track1.innerHTML = items1.map(createSkillCard).join('');
   track2.innerHTML = items2.map(createSkillCard).join('');
